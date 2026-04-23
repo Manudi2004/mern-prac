@@ -7,7 +7,7 @@ export default function AddItem() {
   const [price, setPrice] = useState("");
 
   const addItem = async () => {
-    await axios.post("http://localhost:5001/api/items", {
+    await axios.post("https://mern-prac-ngq7.onrender.com/api/Items", {
       name,
       quantity,
       price

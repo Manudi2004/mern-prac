@@ -9,12 +9,12 @@ export default function ItemList() {
   }, []);
 
   const fetchItems = async () => {
-    const res = await axios.get("http://localhost:5001/api/items");
+    const res = await axios.get("https://mern-prac-ngq7.onrender.com/api/Items");
     setItems(res.data);
   };
 
   const deleteItem = async (id) => {
-    await axios.delete(`http://localhost:5001/api/items/${id}`);
+    await axios.delete(`https://mern-prac-ngq7.onrender.com/api/Items/${id}`);
     fetchItems();
   };
 
