@@ -12,7 +12,7 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
 
-app.use("/api/items", require("./routes/items"));
+app.use("/api/Items", require("./Routes/Items"));
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);

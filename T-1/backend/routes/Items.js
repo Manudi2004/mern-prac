@@ -14,8 +14,8 @@ router.post("/", async (req, res) => {
 
 // READ
 router.get("/", async (req, res) => {
-  const items = await Item.find();
-  res.json(items);
+  const Items = await Item.find();
+  res.json(Items);
 });
 
 // DELETE
